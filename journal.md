@@ -7,7 +7,7 @@ A retail chain is losing revenue through overstocking and stockouts. My job is t
 
 ## Week 1 - Project Setup
 
-### Date: 1stJuly 2026
+### Date: 1st July 2026
 
 ### What I did:
 - Set up professional folder structure
