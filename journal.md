@@ -40,3 +40,26 @@ Decisions made:
 - Use np.log1p() to transform Sales target variable
 - Will need to handle mixed types in StateHoliday column
 
+---
+
+## Week 2 - Day3 - Key Bussiness Insights Found
+
+### Sales Patterns:
+- December sales are ~30% higher than average months (Christmas effect)
+- Monday and Sunday are highest sales days (~€8,000 avg)
+- Saturday is the lowest sales day (~€5,900 avg)
+
+### Promo Impact:
+- Promotions drive a 38.8% sales lift (€5,929 -> €8,228)
+- This makes 'Promo' one of the most important features for our forecasting model
+
+### Data Quality:
+- 172,817 closed store days -> will filter before modelling
+- 54 open stores with zero sales -> will remove as data errors
+- Sales is right skewed -> will apply log transformation
+
+### Feature Engineering Decisions (based on EDA):
+- DayOfWeek will be a strong feature
+- Month/seasonal features are essential (December effect)
+- Promo is critical - 38.8% lift confirmed
+
