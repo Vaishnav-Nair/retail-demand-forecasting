@@ -22,7 +22,7 @@ A retail chain is losing revenue through overstocking and stockouts. My job is t
 
 ---
 
-## Week 2 - Day2 - Data Exploration
+## Week 1 - Day2 - Data Exploration
 
 ### Date: 9th July 2026
 
@@ -42,7 +42,9 @@ Decisions made:
 
 ---
 
-## Week 2 - Day3 - Key Bussiness Insights Found
+## Week 1 - Day3 - Key Bussiness Insights Found
+
+### Date: 10th July 2026
 
 ### Sales Patterns:
 - December sales are ~30% higher than average months (Christmas effect)
@@ -62,4 +64,30 @@ Decisions made:
 - DayOfWeek will be a strong feature
 - Month/seasonal features are essential (December effect)
 - Promo is critical - 38.8% lift confirmed
+
+---
+
+## Week 2 — Day 1: Store Type Analysis
+### Date: 24th September 2026
+
+### What I did:
+- Completed Cell 10 - Store Type Analysis
+- Merged open_df with store_df
+- Grouped by StoreType and visualised average sales
+
+### What I learned:
+- .merge() with how='left' keeps all rows from left dataframe
+- groupby() splits → applies function → returns one result per group
+- result.index and result.values for plotting grouped data
+- Always match x and y size before plotting (learned from my mistake)
+
+### Key Finding:
+- Store Type B averages €10,231 — 48% higher than other types
+- StoreType will be an important feature in our model
+
+### Mistake I made and fixed:
+- Used store_df['StoreType'] instead of result.index
+- x had 1,115 rows, y had 4 — size mismatch error
+
+
 
